@@ -1,0 +1,14 @@
+User OpenJDK base docker image from dockhub and open the application port on the docker container
+box:
+  id:openjdk:8
+  ports:
+    - 8080
+    
+    #Build our application usiing maven, just as we always have
+    build:
+      steps:
+      - install-packages
+          packages: maven
+         - script:
+          name: maven-build
+          code: mvn clean assembly:assembly
