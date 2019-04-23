@@ -1,4 +1,4 @@
-User OpenJDK base docker image from dockhub and open the application port on the docker container
+#User OpenJDK base docker image from dockhub and open the application port on the docker container
 box:
   id:openjdk:8
   ports:
